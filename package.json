@@ -1,0 +1,29 @@
+{
+  "name": "household",
+  "version": "1.0.0",
+  "description": "household-sample-app",
+  "main": "app.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rudresh30/household.git"
+  },
+  "author": "rudresh pandya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rudresh30/household/issues"
+  },
+  "homepage": "https://github.com/rudresh30/household#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "helmet": "^3.12.1",
+    "path": "^0.12.7"
+  }
+}
