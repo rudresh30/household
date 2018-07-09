@@ -11,7 +11,8 @@ app.use(helmet());
 const staticpath = path.join(__dirname, '/');
 app.use(express.static(staticpath));
 
-const port = process.env.PORT || 3000;
-app.listen(port, function () {
-    console.log('listening on port 3000');
+const server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+const ipaddr = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
+app.listen(server_port, ipaddr, function () {
+    console.log(`listening on port ${server_port}`);
 });
