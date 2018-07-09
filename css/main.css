@@ -94,8 +94,60 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Household custom styles
    ========================================================================== */
+
+   body{
+       background-color: #f37020;
+   }
+
+   .title-box{
+      background-color:  #F69F6A;
+      color: #fff;
+      padding-top: 10px;
+   }
+   .title-box h1{
+       font-size: 1.5rem;
+   }
+   .logo{
+       color: #f37020;
+       margin-bottom: 40px;
+   }
+
+   select{
+       -webkit-appearance: none;
+       -moz-appearance: none;
+       appearance: none;
+
+       display: block;
+       width:70vw;
+       padding: 10px 50px 10px 10px;
+       align-content: center;
+       align-items: center;
+       margin-left: 15vw;
+       background: url(../img/downward-arrow-8px.png) no-repeat 95% center;
+       color: #fff;
+       font-style: normal;
+       border-top: none;
+       border-left: none;
+       border-right: none;
+       margin-top: 20px;
+       margin-bottom: 30px;
+       border-bottom: 0.5px solid #fff !important;
+   }
+
+   .submit-btn{
+       background: #fff;
+       color: #f37020;
+       padding: 10px;
+       width: 50vw;
+       margin-left: 25vw;
+       font-size: 1.5rem;
+       border-radius: 24px;
+       border:none;
+       box-shadow: 1px 1px 1px #222;
+       margin-top: 10vh;
+   }
 
 
 
@@ -201,6 +253,10 @@ textarea {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+    .submit-btn{
+        width: 30vw;
+        margin-left: 35vw;
+    }
 }
 
 @media print,

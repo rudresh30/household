@@ -14,6 +14,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -23,8 +25,68 @@
   <![endif]-->
 
   <div class="container-fluid">
-    <p>Hello Welcome to Household</p>
+    <div class="row">
+      <div class="col-sm-12 text-center title-box">
+        <h1>Welcome to
+          <strong>Household</strong>
+        </h1>
+      </div>
+    </div>
+    <!--title box ends-->
+    <!--center logo image-->
+    <div class="logo">
+      <div class="row">
+        <div class="sm-col-12">row1</div>
+      </div>
+      <div class="row">
+        <div class="sm-col-12">row2</div>
+      </div>
+      <div class="row">
+        <div class="sm-col-12">row3</div>
+      </div>
+      <div class="row">
+        <div class="sm-col-12">row4</div>
+      </div>
+      <div class="row">
+        <div class="sm-col-12">row5</div>
+      </div>
+    </div>
+    <!--center logo image ends-->
+
+    <!-- service selection -->
+    <div class="service-selection">
+      <div class="row">
+        <div class="sm-col-12">
+          <form>
+            <select class="select-area text-center" name="area" autocomplete="off">
+              <optgroup label="Johannesburg">
+                <option selected disabled>Select Area</option>
+                <option value="morningside" class="opt">Mornignside-Sandton</option>
+                <option value="bryanston">Bryanston-Sandton</option>
+                <option value="sunninghill">Sunninghill-Sandton</option>
+              </optgroup>
+              <optgroup label="Cape Town">
+                <option value="campsbay">Camps Bay - AS</option>
+                <option value="clifton">Clifton - AS</option>
+                <option value="seapoint">Sea Point - AS</option>
+              </optgroup>
+            </select>
+            <select class="select-service text-center" name="service" autocomplete="off">
+              <optgroup label="Household">
+                <option selected disabled>Select Service</option>
+                <option value="cleaningfd">Cleaning- Full day</option>
+                <option value="cleaninghd">Cleaning- Half day</option>
+                <option value="childcarefd">Childcare- Full day</option>
+                <option value="childcarehd">Childcare- Half day</option>
+            </select>
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--service selection ends-->
   </div>
+  <!--global container ends-->
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
