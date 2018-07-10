@@ -22,6 +22,7 @@
   "homepage": "https://github.com/rudresh30/household#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
     "helmet": "^3.12.1",
     "path": "^0.12.7"
