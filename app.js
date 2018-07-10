@@ -6,13 +6,19 @@ const helmet = require('helmet');
 
 const app = express();
 
+//security middleware
 app.use(helmet());
 
-const staticpath = path.join(__dirname, '/');
+//body parser middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+//static path
+const staticpath = path.join(__dirname, 'public');
 app.use(express.static(staticpath));
 
 app.get('/', function (req, res) {
-    res.render('index.html');
+    res.render('./public/index.html');
 })
 
 const server_port = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 8080;
