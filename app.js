@@ -6,6 +6,10 @@ const helmet = require('helmet');
 
 const app = express();
 
+//view engine
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
 //security middleware
 app.use(helmet());
 
@@ -18,7 +22,7 @@ const staticpath = path.join(__dirname, 'public');
 app.use(express.static(staticpath));
 
 app.get('/', function (req, res) {
-    res.render('./public/index.html');
+    res.render('index');
 })
 
 const server_port = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 8080;
