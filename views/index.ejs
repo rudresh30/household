@@ -1,57 +1,40 @@
 <%include partials/header %>
-<%include partials/titlebox %>  
-    <!--center logo image-->
-    <div class="logo">
-      <div class="row">
-        <div class="sm-col-12">row1</div>
-      </div>
-      <div class="row">
-        <div class="sm-col-12">row2</div>
-      </div>
-      <div class="row">
-        <div class="sm-col-12">row3</div>
-      </div>
-      <div class="row">
-        <div class="sm-col-12">row4</div>
-      </div>
-      <div class="row">
-        <div class="sm-col-12">row5</div>
-      </div>
-    </div>
-    <!--center logo image ends-->
+  <%include partials/titlebox %>
+    <%include partials/centerlogo %>
 
-    <!-- service selection -->
-    <div class="service-selection">
-      <div class="row">
-        <div class="sm-col-12">
-          <form>
-            <select class="select-area text-center" name="area" autocomplete="off">
-              <optgroup label="Johannesburg">
-                <option selected disabled>Select Area</option>
-                <option value="morningside" class="opt">Mornignside-Sandton</option>
-                <option value="bryanston">Bryanston-Sandton</option>
-                <option value="sunninghill">Sunninghill-Sandton</option>
-              </optgroup>
-              <optgroup label="Cape Town">
-                <option value="campsbay">Camps Bay - AS</option>
-                <option value="clifton">Clifton - AS</option>
-                <option value="seapoint">Sea Point - AS</option>
-              </optgroup>
-            </select>
-            <select class="select-service text-center" name="service" autocomplete="off">
-              <optgroup label="Household">
-                <option selected disabled>Select Service</option>
-                <option value="cleaningfd">Cleaning- Full day</option>
-                <option value="cleaninghd">Cleaning- Half day</option>
-                <option value="childcarefd">Childcare- Full day</option>
-                <option value="childcarehd">Childcare- Half day</option>
-            </select>
-            <button type="submit" class="submit-btn">Submit</button>
-          </form>
+      <!-- service selection -->
+      <div class="service-selection">
+        <div class="row">
+          <div class="sm-col-12">
+            <form>
+              <select class="select-area text-center" name="area" autocomplete="off">
+                <optgroup label="Johannesburg">
+                  <option selected disabled>Select Area</option>
+                  <option value="morningside" class="opt">Mornignside-Sandton</option>
+                  <option value="bryanston">Bryanston-Sandton</option>
+                  <option value="sunninghill">Sunninghill-Sandton</option>
+                </optgroup>
+                <optgroup label="Cape Town">
+                  <option value="campsbay">Camps Bay - AS</option>
+                  <option value="clifton">Clifton - AS</option>
+                  <option value="seapoint">Sea Point - AS</option>
+                </optgroup>
+              </select>
+              <select class="select-service text-center" name="service" autocomplete="off">
+                <optgroup label="Household">
+                  <option selected disabled>Select Service</option>
+                  <option value="cleaningfd">Cleaning- Full day</option>
+                  <option value="cleaninghd">Cleaning- Half day</option>
+                  <option value="childcarefd">Childcare- Full day</option>
+                  <option value="childcarehd">Childcare- Half day</option>
+              </select>
+              <input class="text-center" type="text" name="service-date" placeholder="Select Date" id="ip-service-date" autocomplete="off">
+              <button type="submit" class="submit-btn">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-    <!--service selection ends-->
-  </div>
-  <!--global container ends-->
-<%include partials/footer %>
+      <!--service selection ends-->
+      </div>
+      <!--global container ends-->
+      <%include partials/footer %>

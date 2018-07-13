@@ -111,7 +111,8 @@ textarea {
    }
    .logo{
        color: #f37020;
-       margin-bottom: 40px;
+       margin-bottom: 5vh;
+       margin-top: 5vh;
    }
 
    select{
@@ -131,7 +132,7 @@ textarea {
        border-top: none;
        border-left: none;
        border-right: none;
-       margin-top: 20px;
+       margin-top: 2vh;
        margin-bottom: 30px;
        border-bottom: 0.5px solid #fff !important;
    }
@@ -148,6 +149,91 @@ textarea {
        box-shadow: 1px 1px 1px #222;
        margin-top: 10vh;
    }
+
+ #ip-service-date{
+     display: block;
+     background-color: #f37020;
+     color: #fff;
+     padding: 10px 50px 10px 10px;
+     width:70vw;
+     margin-left:15vw;
+     border-top: none;
+     border-left: none;
+     border-right: none;
+     border-bottom: 0.5px solid #fff !important;
+     font-style: normal;
+ }
+
+ /** input placeholder*/
+ ::placeholder {
+    font-style: normal;
+    color: #fff;
+    font-weight: 500;
+}
+::-moz-placeholder{
+    font-style: normal;
+    color:#fff;
+    font-weight: 500;
+    font-family: 
+    
+}
+::-webkit-input-placeholder{
+    font-style: normal;
+    color:#fff;
+    font-weight: 500;
+}
+:-ms-input-placeholder{
+    font-style: normal;
+    color:#fff;
+    font-weight: 500;
+}
+ /** input placeholder ends*/
+
+ /**styling jquery default class for datepicker*/
+
+ .ui-datepicker-header{
+    background: #f37020;
+    color: #fff;
+ }
+
+ .ui-datepicker-title {
+    text-align: center;
+  }
+
+  .ui-datepicker thead{
+    background: #F69F6A;
+    color: #fff;
+  }
+
+.ui-datepicker tbody td {
+  padding: 0;
+  border-right: 1px solid #fff;
+  background: #FFA56E;
+}
+
+.ui-datepicker tbody tr {
+    border-bottom: 1px solid #fff;
+    background: #FFA56E;
+  }
+  .ui-datepicker td span, .ui-datepicker td a{
+    background: #7F5337;
+  }
+
+  .ui-datepicker-calendar .ui-state-default{
+    background: #f37020;
+    color: #fff;
+  }
+  .ui-datepicker-calendar .ui-state-hover{
+    background: #7F5337;
+    color: #fff;
+  }
+.ui-datepicker-calendar .ui-state-active{
+    background: #FFAC15;
+    color: #fff;
+}
+/**datepicker styling end */
+
+
 
 
 
