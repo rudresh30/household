@@ -75,61 +75,54 @@
       </div>
     </div>  -->
 
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-lg-4">
-            <!-- Card Flip -->
-            <div class="card-flip">
-              <div class="flip">
-                <div class="front">
-                  <!-- front content -->
-                  <div class="card services text-center">
-                    <img class="card-img-top" src="img/puppy-1.jpg" alt="service-provider" style="height: 180px; width: 100%; display: block;"
-                      data-holder-rendered="true">
-                    <div class="card-block">
-                      <h4 class="card-title">Puppy 1</h4>
-                      <p class="card-text">Passionate about helping people</p>
-                      <a href="#" class="btn btn-card-detail">Details</a>
-                      <a href="#" class="btn btn-card-select">Select</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="back">
-                  <!-- back content -->
-                  <div class="card services text-center">
-                    <div class="card-block">
-                      <h4 class="card-title">Hello</h4>
-                      <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-                    </div>
-
-                    <div class="card-block">
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Name:
-                          <span>&nbsp;</span>
-                          <span>Puppy-1</span>
-                        </li>
-                        <li class="list-group-item">Security Verified:
-                          <span>&nbsp;</span>
-                          <span>Yes</span>
-                        </li>
-                        <li class="list-group-item">Household Trained:
-                          <span>&nbsp;</span>
-                          <span>Yes</span>
-                        </li>
-                        <li class="list-group-item">With Household Since
-                          <span>&nbsp;</span>
-                          <span>2018-05-31</span>
-                        </li>
-                      </ul>
-                      <a href="#" class="btn btn-card-back">Back</a>
-                    </div>
-                  </div>
+    <section class="service-wrapper">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <!-- individual cards-->
+          <div class="class-container">
+            <div class="flip-card">
+              <!--front face-->
+              <div class="front-face">
+                <img src="img/puppy-1.jpg" alt="service-provider" class="card-image">
+                <h6 class="card-heading">Puppy-1</h6>
+                <div class="card-details">
+                  <p class="card-content">Passionate about helping people</p>
+                  <button class="btn card-select-btn">Select</button>
+                  <button class="btn card-flip-btn">Details</button>
                 </div>
               </div>
+              <!--front face-->
+              <!--back face-->
+              <div class="back-face">
+                <div class="card-details-back">
+                  <h6 class='card-heading'>Details</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Name:
+                      <span>&nbsp;</span>
+                      <span>Puppy-1</span>
+                    </li>
+                    <li class="list-group-item">Security Verified:
+                      <span>&nbsp;</span>
+                      <span>Yes</span>
+                    </li>
+                    <li class="list-group-item">Household Trained:
+                      <span>&nbsp;</span>
+                      <span>Yes</span>
+                    </li>
+                    <li class="list-group-item">Joined:
+                      <span>&nbsp;</span>
+                      <span>2018-05-31</span>
+                    </li>
+                  </ul>
+                  <br>
+                  <br>
+                  <button class="btn card-flip-btn">Back</button>
+                </div>
+              </div>
+              <!--backface-->
             </div>
-            <!-- End Card Flip -->
           </div>
+          <!-- individual cards -->
         </div>
       </div>
     </section>

@@ -9,12 +9,10 @@ $(document).ready(function () {
 
     // flip cards on click
 
-    $('.btn-card-detail').on('click', function (event) {
-        event.preventDefault();
-        $(this).find('.card-flip').toggleClass('flip');
+    $(".card-flip-btn").click(function () {
+
+        $('.flip-card').toggleClass('flip');
+
     });
-    $('.btn-card-back').on('click', function (event) {
-        event.preventDefault();
-        $(this).find('.card-flip').toggleClass('flip');
-    });
+
 });

@@ -234,69 +234,106 @@ textarea {
 /**datepicker styling end */
 
 /**service result cards */
-.services{
-    margin-left:5vw;
-    background: #F69F6A;
-    color: #fff;
-    margin-top: 5vh;
-    border: 0.5px solid #fff;
-    width: 18rem;
-    box-shadow: 1px 1px 1px #000;
-}
 
-.card-block li{
-    background: #F69F6A !important;
-    color: #fff;
+.service-wrapper{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
 }
-
-.card-block ul{
-    background: #F69F6A !important;
-    color: #fff;
-}
-
-.card-flip {
-    -webkit-perspective: 1000px;
-            perspective: 1000px;
-  }
-  .card-flip:hover .flip, .card-flip.hover .flip {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-  }
-  
-  .card-flip,
-  .front,
-  .back {
-    width: 100%;
-    height: 480px;
-  }
-  
-  .flip {
-    transition: 0.6s;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+.class-container{
     position: relative;
-  }
-  
-  .front,
-  .back {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    width: 17rem;
+    height: 21rem;
+    margin-top: 10px;
+    perspective: 700px;
+
+}
+.flip-card{
     position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .front {
-    z-index: 2;
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-  
-  .back {
-    -webkit-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-  }
-  
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in;
+    
+}
+
+.front-face{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #FFA56E;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px #222;
+    transform: rotateY(0deg); /**kep froontface as unrotated*/
+}
+.back-face{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #FFA56E;
+    color: #fff;
+    transform: rotateY(180deg); /**rotate backface to make it unvisible */
+    text-align: center;
+    border-radius:15px;
+    box-shadow: 1px 1px 1px #222;
+}
+.card-image{
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-details{
+    margin:5px;
+    text-align: center;
+}
+.card-heading{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.card-content{
+    text-align: center;
+    padding: 2px;
+}
+.card-flip-btn{
+    font-size: 1.2rem;
+    background: #fff;
+    color: #f37020;
+    box-shadow: 1px 1px 1px #000;
+    border-radius: 12px;
+    margin-left:8px;
+}
+.card-select-btn{
+    font-size: 1.2rem;
+    background: #fff;
+    color: #f37020;
+    box-shadow: 1px 1px 1px #000;
+    border-radius: 12px;
+    margin-right:8px;
+}
+.card-details-back{
+    margin:5px;
+    text-align: center;
+}
+
+.card-details-back li{
+    background: #FFA56E;
+    color: #fff;
+    text-align: left;
+}
+
+.flip-card.flip {
+    transform:rotateY(180deg);
+}
+
 /**service result cards */
 
 
