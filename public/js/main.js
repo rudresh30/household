@@ -6,4 +6,15 @@ $(document).ready(function () {
         minDate: 1,
         maxDate: "+7D"
     });
+
+    // flip cards on click
+
+    $('.btn-card-detail').on('click', function (event) {
+        event.preventDefault();
+        $(this).find('.card-flip').toggleClass('flip');
+    });
+    $('.btn-card-back').on('click', function (event) {
+        event.preventDefault();
+        $(this).find('.card-flip').toggleClass('flip');
+    });
 });
