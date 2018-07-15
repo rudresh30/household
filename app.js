@@ -9,7 +9,7 @@ const pg = require('pg');
 const app = express();
 const services = require('./router/services');
 
-const connectString = 'postgres://wmdmqpyz:MqiIqVWCLpEyTmeirBsFIUjNIiP5C2RN@horton.elephantsql.com:5432/wmdmqpyz';
+const connectString = process.env.DATABASE_URL;
 
 
 const client = new pg.Client({ connectionString: connectString })
