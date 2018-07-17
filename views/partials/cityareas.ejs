@@ -1,0 +1,16 @@
+      <!-- service selection -->
+      <div class="service-selection">
+        <div class="row">
+          <div class="sm-col-12">
+            <form>
+              <select class="select-area text-center" name="area" autocomplete="off">
+              <% city.forEach(function(cityName){ %>
+                <optgroup label="<%= cityName %>">
+                <option selected disabled>Select Area</option>
+                <% dbRows.forEach(function(areaObj){ %>
+                  <% if (areaObj.city == cityName) { %>}                
+                  <option value="<%= areaObj.id %>" ><%= areaObj.area %></option>
+                  <% } %>
+                <%})%>  
+              <%})%>
+              </select>

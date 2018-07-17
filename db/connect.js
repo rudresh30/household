@@ -1,20 +1,8 @@
-const pg = require('pg');
+const connString = process.env.DATABASE_URL || 'postgres://wmdmqpyz:MqiIqVWCLpEyTmeirBsFIUjNIiP5C2RN@horton.elephantsql.com:5432/wmdmqpyz'
 
-function connectdb() {
+const connectDB = {
+    connectString: connString
+}
 
-    const connectString = 'postgres://avnadmin:ke61hhhyjsry4wda@pg-7e33eeb-rudresh-3416.aivencloud.com:20375/defaultdb?sslmode=require';
+module.exports = connectDB;
 
-    var client = new pg.Client({ connectionString: connectString });
-
-    client.connect()
-        .then(() => {
-            console.log('connected');
-        })
-        .catch((err) => {
-            console.error(err.stack);
-        })
-
-
-};
-
-module.exports = connectdb;

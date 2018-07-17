@@ -8,20 +8,8 @@ const pg = require('pg');
 
 const app = express();
 const services = require('./router/services');
-
-const connectString = process.env.DATABASE_URL;
-
-
-const client = new pg.Client({ connectionString: connectString })
-client.connect((err) => {
-    if (err) {
-        console.error('error connecting', err.stack)
-    } else {
-        console.log('connected')
-        client.end()
-    }
-})
-client.end();
+const dbConnectString = require('./db/connect').connectString;
+const getCityAreas = require('./db/getcityarea');
 
 //view engine
 app.set('view engine', 'ejs');
@@ -44,8 +32,18 @@ app.use(express.static(staticpath));
 app.use('/services', services);
 
 app.get('/', function (req, res) {
-    res.render('index');
+
+    getCityAreas((err, result) => {
+        if (err) {
+            consol.error(err.stack);
+        } else {
+            res.render('index', result);
+        }
+    });
+
+
 })
+
 
 const server_port = process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || 8080;
 const ipaddr = process.env.OPENSHIFT_NODEJS_IP || process.env.IP || '0.0.0.0';

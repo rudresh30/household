@@ -10,9 +10,9 @@ $(document).ready(function () {
     // flip cards on click
 
     $(".card-flip-btn").click(function () {
-
-        $('.flip-card').toggleClass('flip');
-
+        var bparent = $(this);
+        console.log(bparent);
+        $(this).parents().eq(2).toggleClass('flip');
     });
 
 });
