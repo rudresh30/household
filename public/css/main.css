@@ -246,6 +246,7 @@ textarea {
     height: 21rem;
     margin-top: 10px;
     perspective: 700px;
+    
 
 }
 .flip-card{
@@ -268,6 +269,7 @@ textarea {
     border-radius: 15px;
     box-shadow: 1px 1px 1px #222;
     transform: rotateY(0deg); /**kep froontface as unrotated*/
+    margin-bottom: 5px;
 }
 .back-face{
     position:absolute;
@@ -280,6 +282,7 @@ textarea {
     text-align: center;
     border-radius:15px;
     box-shadow: 1px 1px 1px #222;
+    margin-bottom: 5px;
 }
 .card-image{
     width: 100%;
