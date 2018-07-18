@@ -239,8 +239,8 @@ textarea {
 .service-wrapper{
     display:flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;    
-    margin-bottom: 10px;
+    justify-content: space-around;    
+    
 }
 .class-container{
     position: relative;
