@@ -22,5 +22,5 @@ $(document).ready(function () {
         var newUrl = `/services`;
         console.log(newUrl);
         window.location.assign(newUrl);
-    })
+    });
 });
