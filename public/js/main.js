@@ -30,4 +30,11 @@ $(document).ready(function () {
         console.log(newUrl);
         window.location.assign(newUrl);
     });
+
+    $(".register-btn").click(function (e) {
+        e.preventDefault();
+        let newUrl = `/payment`;
+        console.log(newUrl);
+        window.location.assign(newUrl);
+    });
 });
