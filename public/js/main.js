@@ -19,7 +19,14 @@ $(document).ready(function () {
 
     $(".submit-btn").click(function (e) {
         e.preventDefault();
-        var newUrl = `/services`;
+        let newUrl = `/services`;
+        console.log(newUrl);
+        window.location.assign(newUrl);
+    });
+
+    $(".card-select-btn").click(function (e) {
+        e.preventDefault();
+        let newUrl = `/register`;
         console.log(newUrl);
         window.location.assign(newUrl);
     });

@@ -148,6 +148,7 @@ textarea {
        border:none;
        box-shadow: 1px 1px 1px #222;
        margin-top: 10vh;
+       margin-bottom: 5vh;
    }
 
  #ip-service-date{
@@ -340,7 +341,33 @@ textarea {
 
 /**service result cards */
 
+/**registration form*/
+.registration{
+    background: #F69F6A;
+    color: #fff;
+}
+.register-btn{
+    background: #fff;
+    color: #f37020;
+    padding: 10px;
+    width: 50vw;
+    margin-left: 25vw;
+    font-size: 1.5rem;
+    border-radius: 24px;
+    border:none;
+    box-shadow: 1px 1px 1px #222;
+    margin-top: 10vh;
+    margin-bottom: 10px;
+}
 
+/**registration form*/
+
+/**payments form */
+.payment{
+    background: #F69F6A;
+    color: #fff;
+}
+/**payments form */
 
 
 

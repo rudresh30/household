@@ -8,6 +8,7 @@ const pg = require('pg');
 
 const app = express();
 const services = require('./router/services');
+const register = require('./router/registration');
 const dbConnectString = require('./db/connect').connectString;
 const getCityAreas = require('./db/getcityarea');
 
@@ -28,8 +29,12 @@ app.use(express.static(staticpath));
 
 
 //routes
-
+//services
 app.use('/services', services);
+
+//registration
+app.use('/register', register);
+
 
 app.get('/', function (req, res) {
 
