@@ -15,4 +15,12 @@ $(document).ready(function () {
         $(this).parents().eq(2).toggleClass('flip');
     });
 
+    // redirect to services page
+
+    $(".submit-btn").click(function (e) {
+        e.preventDefault();
+        var newUrl = `/services`;
+        console.log(newUrl);
+        window.location.assign(newUrl);
+    })
 });
