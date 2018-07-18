@@ -239,6 +239,7 @@ textarea {
     display:flex;
     flex-flow: row wrap;
     justify-content: space-evenly;    
+    margin-bottom: 10px;
 }
 .class-container{
     position: relative;
