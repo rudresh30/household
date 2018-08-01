@@ -37,4 +37,8 @@ $(document).ready(function () {
         console.log(newUrl);
         window.location.assign(newUrl);
     });
+    $("#ip-service").autocomplete({
+        minLength: 2,
+        source: ["cleaning", "cleaning full day", "deep cleaning", "carpet cleaning", "pool cleaning", "party cleaning", "gardening", "landscaping", "garden decoration", "trimming", "lawn mowing", "garden cleaning"]
+    });
 });
