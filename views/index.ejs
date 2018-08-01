@@ -1,27 +1,8 @@
 <%include partials/header %>
-  <%include partials/titlebox %>
-    <%include partials/centerlogo %>
-    <%include partials/cityareas.ejs %>
+  <%include partials/titleboxlogo %>
+    <%include partials/imageservices%>
+    <%include partials/servicecardsvertical%>
+    <%include partials/servicecardsgardening%>
 
-
-
-              <select class="select-service text-center" name="service" autocomplete="off">
-                <optgroup label="Household">
-                  <option selected disabled>Select Service</option>
-                  <option value="10001">Cleaning- Full day</option>
-                  <option value="10002">Cleaning- Half day</option>
-                  <option value="10003">Childcare- Full day</option>
-                  <option value="10004">Childcare- Half day</option>
-              </select>
-              <input class="text-center" type="text" name="service-date" placeholder="Select Date" id="ip-service-date" autocomplete="off" readonly>
-              <button type="submit" class="submit-btn">Submit</button>
-            </form>
-            <br/>
-            <br/>
-          </div>
-        </div>
-      </div>
-      <!--service selection ends-->
-      </div>
-      <!--global container ends-->
+             
       <%include partials/footer %>

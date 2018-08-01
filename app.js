@@ -41,13 +41,16 @@ app.use('/payment', payment);
 
 app.get('/', function (req, res) {
 
+    res.render('index');
+    /*
+
     getCityAreas((err, result) => {
         if (err) {
             consol.error(err.stack);
         } else {
             res.render('index', result);
         }
-    });
+    }); */
 
 
 })
